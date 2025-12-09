@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/colornamefinder",
+  "version": "1.1.12",
+  "description": "Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/colornamefinder-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "color name", "hex to color", "color lookup", "named colors", "css colors"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/colornamefinder-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/colornamefinder?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
