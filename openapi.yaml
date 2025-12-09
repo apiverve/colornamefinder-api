@@ -1,0 +1,113 @@
+openapi: 3.0.4
+info:
+  title: Color Name Finder
+  description: Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/colornamefinder:
+    get:
+      summary: Find Color Name
+      description: Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
+      operationId: colornamefinder
+      parameters:
+      - name: hex
+        in: query
+        schema:
+          type: string
+        required: true
+        description: 'Hex color value (with or without # prefix)'
+        example: FF5733
+      - name: closest
+        default: '1'
+        in: query
+        schema:
+          type: number
+        required: false
+        description: 'Number of closest color matches to return (1-20, default: 1)'
+        example: '3'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  input_hex: '#FF5733'
+                  input_rgb:
+                    r: 255
+                    g: 87
+                    b: 51
+                  exact_match: false
+                  closest_color:
+                    name: Tomato
+                    hex: FF6347
+                    distance: 23.32
+                    similarity: 94.72
+                    rgb:
+                      r: 255
+                      g: 99
+                      b: 71
+                  closest_matches:
+                  - name: Tomato
+                    hex: FF6347
+                    distance: 23.32
+                    similarity: 94.72
+                    rgb:
+                      r: 255
+                      g: 99
+                      b: 71
+                  - name: Coral
+                    hex: FF7F50
+                    distance: 49.41
+                    similarity: 88.81
+                    rgb:
+                      r: 255
+                      g: 127
+                      b: 80
+                  - name: Chocolate
+                    hex: D2691E
+                    distance: 52.82
+                    similarity: 88.04
+                    rgb:
+                      r: 210
+                      g: 105
+                      b: 30
+                  total_named_colors: 141
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
