@@ -16,7 +16,7 @@ const api = new colornamefinderAPI({
 // Example query
 var query = {
   hex: "FF5733",
-  closest: 3
+  closest: 1
 };
 
 // Make the API request using callback
