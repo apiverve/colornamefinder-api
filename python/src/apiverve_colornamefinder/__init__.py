@@ -1,1 +1,3 @@
-from .apiClient import ColornamefinderAPIClient
+from .apiClient import ColornamefinderAPIClient, ColornamefinderAPIClientError
+
+__all__ = ['ColornamefinderAPIClient', 'ColornamefinderAPIClientError']
