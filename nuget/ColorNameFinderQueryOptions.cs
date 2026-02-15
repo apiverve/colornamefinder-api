@@ -12,14 +12,12 @@ namespace APIVerve.API.ColorNameFinder
     {
         /// <summary>
         /// Hex color value (with or without # prefix)
-        /// Example: FF5733
         /// </summary>
         [JsonProperty("hex")]
         public string Hex { get; set; }
 
         /// <summary>
-        /// Number of closest color matches to return (1-20, default: 1)
-        /// Example: 3
+        /// Number of closest color matches to return
         /// </summary>
         [JsonProperty("closest")]
         public string Closest { get; set; }
