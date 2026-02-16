@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/colornamefinder",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.",
   "main": "index.js",
   "types": "index.d.ts",
