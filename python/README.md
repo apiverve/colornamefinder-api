@@ -44,7 +44,10 @@ from apiverve_colornamefinder.apiClient import ColornamefinderAPIClient
 # Initialize the client with your APIVerve API key
 api = ColornamefinderAPIClient("[YOUR_API_KEY]")
 
-query = { "hex": "FF5733", "closest": 1 }
+query = {
+    "hex": "FF5733",
+    "closest": 1
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "hex": "FF5733", "closest": 1 }
+query = {
+    "hex": "FF5733",
+    "closest": 1
+}
 ```
 
 ###### Simple Request
@@ -173,7 +179,10 @@ from apiverve_colornamefinder.apiClient import ColornamefinderAPIClient, Colorna
 
 api = ColornamefinderAPIClient("[YOUR_API_KEY]")
 
-query = { "hex": "FF5733", "closest": 1 }
+query = {
+    "hex": "FF5733",
+    "closest": 1
+}
 
 try:
     result = api.execute(query)
@@ -194,7 +203,10 @@ from apiverve_colornamefinder.apiClient import ColornamefinderAPIClient, Colorna
 
 api = ColornamefinderAPIClient("[YOUR_API_KEY]")
 
-query = { "hex": "FF5733", "closest": 1 }
+query = {
+    "hex": "FF5733",
+    "closest": 1
+}
 
 try:
     result = api.execute(query)
@@ -228,7 +240,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_colornamefinder.apiClient import ColornamefinderAPIClient, ColornamefinderAPIClientError
 
-query = { "hex": "FF5733", "closest": 1 }
+query = {
+    "hex": "FF5733",
+    "closest": 1
+}
 
 # Using context manager ensures proper cleanup
 with ColornamefinderAPIClient("[YOUR_API_KEY]") as api:
@@ -254,7 +269,10 @@ from apiverve_colornamefinder.apiClient import ColornamefinderAPIClient
 # Enable debug mode
 api = ColornamefinderAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "hex": "FF5733", "closest": 1 }
+query = {
+    "hex": "FF5733",
+    "closest": 1
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -269,8 +287,12 @@ from apiverve_colornamefinder.apiClient import ColornamefinderAPIClient
 
 api = ColornamefinderAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "hex": "FF5733",
+    "closest": 1
+}
+
 try:
-    query = { "hex": "FF5733", "closest": 1 }
     result = api.execute(query)
     print(result)
 finally:
