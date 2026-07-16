@@ -20,6 +20,6 @@ namespace APIVerve.API.ColorNameFinder
         /// Number of closest color matches to return
         /// </summary>
         [JsonProperty("closest")]
-        public string Closest { get; set; }
+        public int? Closest { get; set; }
     }
 }
