@@ -25,6 +25,9 @@ namespace APIVerve.API.ColorNameFinder
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -36,7 +39,7 @@ namespace APIVerve.API.ColorNameFinder
         public Rgb InputRgb { get; set; }
 
         [JsonProperty("exact_match")]
-        public bool ExactMatch { get; set; }
+        public bool? ExactMatch { get; set; }
 
         [JsonProperty("closest_color")]
         public Closest ClosestColor { get; set; }
@@ -45,7 +48,7 @@ namespace APIVerve.API.ColorNameFinder
         public Closest[] ClosestMatches { get; set; }
 
         [JsonProperty("total_named_colors")]
-        public long TotalNamedColors { get; set; }
+        public long? TotalNamedColors { get; set; }
     }
 
     public partial class Closest
@@ -57,10 +60,10 @@ namespace APIVerve.API.ColorNameFinder
         public string Hex { get; set; }
 
         [JsonProperty("distance")]
-        public double Distance { get; set; }
+        public double? Distance { get; set; }
 
         [JsonProperty("similarity")]
-        public double Similarity { get; set; }
+        public double? Similarity { get; set; }
 
         [JsonProperty("rgb")]
         public Rgb Rgb { get; set; }
@@ -69,12 +72,24 @@ namespace APIVerve.API.ColorNameFinder
     public partial class Rgb
     {
         [JsonProperty("r")]
-        public long R { get; set; }
+        public long? R { get; set; }
 
         [JsonProperty("g")]
-        public long G { get; set; }
+        public long? G { get; set; }
 
         [JsonProperty("b")]
-        public long B { get; set; }
+        public long? B { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
