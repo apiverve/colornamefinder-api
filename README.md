@@ -191,11 +191,81 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Color Name Finder API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "input_hex": "#FF5733",
+    "input_rgb": {
+      "r": 255,
+      "g": 87,
+      "b": 51
+    },
+    "exact_match": false,
+    "closest_color": {
+      "name": "Tomato",
+      "hex": "FF6347",
+      "distance": 23.32,
+      "similarity": 94.72,
+      "rgb": {
+        "r": 255,
+        "g": 99,
+        "b": 71
+      }
+    },
+    "closest_matches": [
+      {
+        "name": "Tomato",
+        "hex": "FF6347",
+        "distance": 23.32,
+        "similarity": 94.72,
+        "rgb": {
+          "r": 255,
+          "g": 99,
+          "b": 71
+        }
+      },
+      {
+        "name": "Coral",
+        "hex": "FF7F50",
+        "distance": 49.41,
+        "similarity": 88.81,
+        "rgb": {
+          "r": 255,
+          "g": 127,
+          "b": 80
+        }
+      },
+      {
+        "name": "Chocolate",
+        "hex": "D2691E",
+        "distance": 52.82,
+        "similarity": 88.04,
+        "rgb": {
+          "r": 210,
+          "g": 105,
+          "b": 30
+        }
+      }
+    ],
+    "total_named_colors": 141
+  }
 }
 ```
 
