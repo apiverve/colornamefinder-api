@@ -1,13 +1,13 @@
-# [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
+Color Name Finder matches any hex color code to its closest named CSS color. Send a hex value to get the matching color name, RGB coordinates, and an exact match flag.
 
 The Color Name Finder API provides a simple, reliable way to integrate color name finder functionality into your applications. Built for developers who need production-ready color name finder capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/colornamefinder-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/colornamefinder](https://docs.apiverve.com/ref/colornamefinder)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -273,7 +273,7 @@ A real response from the Color Name Finder API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
