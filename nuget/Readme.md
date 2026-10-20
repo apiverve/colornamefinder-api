@@ -1,13 +1,12 @@
-ColorNameFinder API
+Color Name Finder API
 ============
 
-Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
+Color Name Finder matches any hex color code to its closest named CSS color. Send a hex value to get the matching color name, RGB coordinates, and an exact match flag.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [ColorNameFinder API](https://apiverve.com/marketplace/colornamefinder?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.ColorNameFinder.svg)](https://www.nuget.org/packages/APIVerve.API.ColorNameFinder)
+
+This is a .NET wrapper for the [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the colornamefinder API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Color Name Finder API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,9 +60,9 @@ class Program
         var apiClient = new ColorNameFinderAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorNameFinderQueryOptions {
-    Hex = "FF5733",
-    Closest = 1
-};
+            Hex = "FF5733",
+            Closest = 1
+        };
 
         // Make the API call
         try
@@ -93,13 +92,13 @@ class Program
 
 ## Usage
 
-The ColorNameFinder API documentation is found here: [https://docs.apiverve.com/ref/colornamefinder](https://docs.apiverve.com/ref/colornamefinder?utm_source=nuget&utm_medium=readme).
+The Color Name Finder API documentation is found here: [https://docs.apiverve.com/ref/colornamefinder](https://docs.apiverve.com/ref/colornamefinder?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-ColorNameFinder API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Color Name Finder API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -126,9 +125,9 @@ public class Example
         var apiClient = new ColorNameFinderAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorNameFinderQueryOptions {
-    Hex = "FF5733",
-    Closest = 1
-};
+            Hex = "FF5733",
+            Closest = 1
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -159,9 +158,9 @@ public class Example
         var apiClient = new ColorNameFinderAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorNameFinderQueryOptions {
-    Hex = "FF5733",
-    Closest = 1
-};
+            Hex = "FF5733",
+            Closest = 1
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -197,9 +196,9 @@ public class Example
         var apiClient = new ColorNameFinderAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorNameFinderQueryOptions {
-    Hex = "FF5733",
-    Closest = 1
-};
+            Hex = "FF5733",
+            Closest = 1
+        };
 
         try
         {
@@ -254,9 +253,9 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new ColorNameFinderQueryOptions {
-    Hex = "FF5733",
-    Closest = 1
-};
+            Hex = "FF5733",
+            Closest = 1
+        };
 
         try
         {
@@ -438,7 +437,7 @@ using (var apiClient = new ColorNameFinderAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -449,12 +448,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
