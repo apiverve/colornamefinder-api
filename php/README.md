@@ -1,6 +1,6 @@
 # Color Name Finder API - PHP Package
 
-Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
+Color Name Finder matches any hex color code to its closest named CSS color. Send a hex value to get the matching color name, RGB coordinates, and an exact match flag.
 
 ## Installation
 
@@ -137,11 +137,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/colornamefinder?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/colornamefinder?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/colornamefinder?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/colornamefinder?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/colornamefinder?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/colornamefinder?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
