@@ -1,7 +1,7 @@
 name: apiverve_colornamefinder
-description: Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=homepage
+description: "Color Name Finder matches any hex color code to its closest named CSS color. Send a hex value to get the matching color name, RGB coordinates, and an exact match flag."
+version: 1.2.3
+homepage: https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/colornamefinder-api/tree/main/dart
 
 environment:

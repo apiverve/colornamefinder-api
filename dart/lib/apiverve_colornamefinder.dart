@@ -1,8 +1,8 @@
 /// Color Name Finder API client for Dart/Flutter
 ///
-/// Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
+/// Color Name Finder matches any hex color code to its closest named CSS color. Send a hex value to get the matching color name, RGB coordinates, and an exact match flag.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_colornamefinder;
 
 export 'src/client.dart';

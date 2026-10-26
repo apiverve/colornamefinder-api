@@ -1,11 +1,11 @@
 # Color Name Finder API - Dart/Flutter Client
 
-Color Name Finder is a tool for finding the closest named color from a hex color value. It uses color distance algorithms to match hex codes to CSS/HTML named colors and provides similarity scores for accurate color identification.
+Color Name Finder matches any hex color code to its closest named CSS color. Send a hex value to get the matching color name, RGB coordinates, and an exact match flag.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_colornamefinder.svg)](https://pub.dev/packages/apiverve_colornamefinder)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_colornamefinder: ^1.1.14
+  apiverve_colornamefinder: ^1.2.3
 ```
 
 Then run:
@@ -113,12 +113,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/colornamefinder](https://docs.apiverve.com/ref/colornamefinder?utm_source=dart&utm_medium=readme)
+- **API Home:** [Color Name Finder API](https://apiverve.com/marketplace/colornamefinder?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/colornamefinder](https://docs.apiverve.com/ref/colornamefinder?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -126,4 +126,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
