@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/colornamefinder",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Color Name Finder matches any hex color code to its closest named CSS color. Send a hex value to get the matching color name, RGB coordinates, and an exact match flag.",
   "main": "index.js",
   "types": "index.d.ts",
